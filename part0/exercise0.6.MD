@@ -9,7 +9,7 @@ sequenceDiagram
     Note left of server: The server creates a new object and adds it to an array called notes
     server->>browser: redirects the browser to /notes
     deactivate server
-    
+
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
     server->>browser: HTML document
@@ -31,6 +31,6 @@ sequenceDiagram
     server-->>browser: the JSON file
     deactivate server
 
-    Note right of the browser: The browser executes the callback function that renders the notes
+    Note right of browser: The browser executes the callback function that renders the notes
 
 ```
